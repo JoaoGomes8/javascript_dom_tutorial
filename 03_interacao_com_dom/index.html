@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+    <p>Conteúdo HTML</p>
+
+    <script>
+        /*
+        O DOM permite-nos fazer todo o tipo de interações com os seus elementos e respetivo conteúdo.
+        No entanto, primeiro é necessário conseguir "chegar" ao elemento que queremos selecionar.
+
+        Antes de avançarmos para as funções do document que permitem ir diretamente para um elemento,
+        vamos ver algumas curiusidades que são sempre imprtantes conhecer.
+
+        <html> corresponde a document.documentElement
+        <body> corresponde a document.body
+        <head> corresponde a document.head
+        */
+
+            
+    </script>
+
+    <script>
+        console.log(document.body.childNodes);
+        document.body.childNodes[1].innerText = "Novo texto do parágrafo"
+        document.body.childNodes[1].innerText = "Novo texto do parágrafo 2"
+
+        console.log(document.documentElement.lang);
+    </script>
+
+</body>
+</html>
