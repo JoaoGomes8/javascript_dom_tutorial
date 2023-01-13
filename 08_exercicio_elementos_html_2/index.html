@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="titulo">Este texto tem importância</h3>
+
+    <div class="noticia">
+        <h1>Titulo da noticia <strong>1</strong></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus voluptatibus nam? Veritatis obcaecati ipsum voluptate amet perspiciatis? Fugiat sunt in aliquam cum mollitia unde officiis dignissimos sapiente aperiam natus.</p>
+    </div>
+
+    <div>
+        <h1>Titulo da noticia 2</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit illum dignissimos quos at neque! Quisquam, perferendis? Nam, velit! Commodi similique molestiae, vitae quo nihil earum iusto mollitia excepturi repudiandae a?</p>
+    </div>
+
+    <img onclick="executar()" src="news_1.jpg" alt="Noticias" id="noticias">
+
+    <!-- javascript -->
+    <script>
+
+        // usando funções e eventos para alterar o conteúdo
+        function executar() {
+            let e = document.querySelector("#titulo");
+            e.innerText = "Novo titulo";
+            e.style.color = "blue";
+            
+        }
+        
+
+    </script>
+
+</body>
+</html>
