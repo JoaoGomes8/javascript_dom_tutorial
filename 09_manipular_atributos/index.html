@@ -24,12 +24,31 @@
     <div class="noticia">
         <h1>Titulo da noticia</h1>
         <h3 id="sumario">Sumário da notícia</h3>
-        <img width="300px" src="news_1.jpg" alt="">
+        <img width="300px" src="news_1.jpg" alt="Imagem da noticia">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ipsa ea pariatur obcaecati modi! Sint praesentium dolorum cumque fuga alias rem odit nisi in, consequatur, reiciendis qui iste laboriosam eius?</p>
     </div>
 
     <script>
 
+        let elemento = document.querySelector('h3');
+
+        // hasAttribute
+        if(elemento.hasAttribute('id')){
+            console.log('SIM');
+        }
+
+        // getAttribute
+        console.log(elemento.getAttribute('id'));
+
+        // setAttribute
+        elemento.setAttribute('title','Título do sumário')
+
+        // removeAttribute
+        let imagem = document.querySelector('img');
+        // imagem.removeAttribute('src');
+
+        // attributes
+        console.log(imagem.attributes['alt']);
     </script>
 </body>
 </html>

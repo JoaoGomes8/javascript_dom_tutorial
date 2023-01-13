@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border: 1px solid lightgray;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        p{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        Dentro do DIV
+    </div>
+
+    <script>
+
+        let div = document.querySelector('.container');
+
+        // adicionar antes do div
+        // div.before('AAAA');
+
+        // adicionar dentro do div, mas no ínicio
+        // div.prepend('BBBB');
+
+        // adicionar dentro do div, mas no fim
+        // div.append('CCCC');
+
+        // adicionar a seguir ao div
+        // div.after('DDDD');
+
+        let p1 = document.createElement('p');
+        let p2 = document.createElement('p');
+        let p3 = document.createElement('p');
+        let p4 = document.createElement('p');
+        p1.innerText = "Parágrafo 1";
+        p2.innerText = "Parágrafo 2";
+        p3.innerText = "Parágrafo 3";
+        p4.innerText = "Parágrafo 4";
+
+        // colocar o parágrafo antes do div
+        div.before(p1);
+
+        // colocar o parágrafo dentro do div, mas no ínicio
+        div.prepend(p2);
+
+        // colocar o parágrafo dentro do div, mas no fim
+        div.append(p3);
+
+        // colocar o parágrafo a seguir ao div
+        div.after(p4);
+
+
+    </script>
+
+</body>
+</html>
