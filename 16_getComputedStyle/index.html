@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+            margin-top: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>    
+    <p style="color: rgb(0, 0, 255); margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, recusandae temporibus necessitatibus commodi tempore nesciunt suscipit autem voluptatibus labore aut est, facere doloremque praesentium dolorem dolores natus consequatur nemo vitae?</p>
+    
+
+    <script>
+        
+        let p = document.querySelector('p');
+        console.log(p.style.color);
+        console.log(p.style.marginTop);
+
+        // let h1 = document.querySelector('h1'); // NÃO DÁ para ir buscar ao <style>
+        // console.log(h1.style.color);
+
+        // Para ir buscar ao css temos que usar o getComputedStyle()
+        let propriedades = getComputedStyle(document.querySelector('h1'));
+        console.log(propriedades.color);
+        console.log(propriedades.marginTop);
+        console.log(propriedades.border);
+
+        console.log(propriedades.borderWidth);
+        console.log(propriedades.borderColor);
+        console.log(propriedades.borderStyle);
+
+    </script>
+
+</body>
+</html>
