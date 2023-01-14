@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: lightblue;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        In proident dolor sit magna enim commodo quis. Aliqua commodo do dolore occaecat ad do laborum do ullamco aliqua reprehenderit mollit et. Duis ea ex laboris ipsum duis pariatur aute. Elit est eiusmod pariatur officia tempor qui esse sint ad pariatur.
+        Ullamco cupidatat mollit eu sit aliqua dolore. Ex ullamco minim quis sint anim adipisicing nisi ut aliquip. Lorem cupidatat cillum ad commodo veniam in do ullamco ullamco non reprehenderit aliquip sit non. Anim in dolor eiusmod fugiat irure et occaecat dolor. Exercitation reprehenderit non aliqua magna commodo qui.
+        Et reprehenderit magna commodo labore nulla esse cupidatat culpa commodo ex. In minim laborum laboris pariatur amet duis qui pariatur minim id occaecat do eiusmod. Est do ipsum Lorem tempor dolore deserunt laborum labore incididunt deserunt. Mollit mollit incididunt culpa voluptate commodo amet duis pariatur et eiusmod. Elit laborum enim magna aute id anim proident sunt mollit. Veniam id id officia esse do. Mollit incididunt esse pariatur commodo ex laboris dolor ipsum veniam nulla minim elit irure.
+        Qui in fugiat tempor consequat nostrud Lorem ea dolor pariatur dolore incididunt culpa. Aliqua ut irure nisi ut non reprehenderit dolor. Esse do esse veniam sit mollit nostrud in exercitation magna non. Aliqua esse veniam officia fugiat consectetur eu qui voluptate et elit. Et qui nostrud reprehenderit ad. Aliquip est consequat irure officia irure aliqua deserunt irure eu deserunt eiusmod est Lorem ea.
+        Laboris in cillum esse laboris ea consequat qui nulla aliquip sint. Ea Lorem ipsum labore occaecat aliquip ad et quis voluptate eu aliquip. Lorem occaecat deserunt aute labore tempor nostrud. Magna ex officia consectetur tempor quis. Officia officia cupidatat elit magna aute voluptate amet.
+        Voluptate cillum eu eu laboris incididunt commodo est do enim amet elit aute. In eu reprehenderit eu ut Lorem deserunt dolor. Ea proident non sit Lorem aliqua est eiusmod elit commodo occaecat laboris.
+        Esse consectetur duis adipisicing mollit nulla laborum ipsum veniam ullamco. Magna consectetur sunt voluptate eu exercitation mollit. Dolore velit dolor magna ea minim id reprehenderit elit proident ex ea. Nisi ut nulla ut proident consectetur proident excepteur elit occaecat ipsum. Ullamco incididunt occaecat aliquip culpa.
+        Aliquip ut consectetur esse incididunt commodo pariatur et enim voluptate cillum ullamco sunt ipsum. Deserunt est officia sit consequat eu enim aliquip amet nulla ex minim mollit. Minim nulla amet reprehenderit ipsum nisi magna ad. Consectetur quis id ullamco minim duis aute.
+        Sit exercitation fugiat magna in duis ut deserunt est velit. Veniam irure nulla esse aliquip fugiat fugiat cillum nulla laboris. Lorem veniam ipsum ea dolore proident esse nulla et eiusmod. Adipisicing anim occaecat consequat et ex excepteur cupidatat laborum aute mollit nostrud occaecat. Elit id et eiusmod sit esse fugiat ullamco non irure pariatur magna eiusmod exercitation. Et sit labore magna sint aliquip ullamco ut do occaecat. Tempor sint do voluptate ullamco.
+    </div>
+
+    <p id="propriedades"></p>
+    <button onclick="buscarPropriedades()">Executar</button>
+
+    <script>
+
+        function buscarPropriedades() {
+            let div = document.querySelector('div');
+            let p = document.querySelector('#propriedades');
+
+            let resultados = "";
+            resultados += "offsetLeft = " + div.offsetLeft + " "; 
+            resultados += "offsetTop = " + div.offsetTop + " "; 
+            resultados += "offsetWidth = " + div.offsetWidth + " "; 
+            resultados += "offsetHeight = " + div.offsetHeight + " "; 
+
+            resultados += "scrollTop = " + div.scrollTop + " "; 
+            resultados += "scrollHeight = " + div.scrollHeight + " "; 
+
+            p.textContent = resultados;
+        }
+
+    </script>
+
+</body>
+</html>
