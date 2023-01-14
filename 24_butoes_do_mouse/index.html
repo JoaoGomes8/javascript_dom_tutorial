@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 30px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        Este é o meu elemento
+    </div>
+
+    <script>
+
+        document.querySelector("div").addEventListener("mousedown", () => {
+            // console.log(event.button);
+
+            if (event.shiftKey) {
+                console.log('Ok - shift');
+            }
+            if (event.altKey) {
+                console.log('Ok - alt');
+            }
+            if (event.ctrlKey) {
+                console.log('Ok - control');
+            }
+
+            if (event.ctrlKey && event.shiftKey) {
+                console.log('Combinação de shift + control');
+            }
+        })
+
+    </script>
+    
+</body>
+</html>
